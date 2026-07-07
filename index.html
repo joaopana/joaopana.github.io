@@ -1503,8 +1503,8 @@
                     
                     // Começa a piscar a cada 1 segundo (1000ms)
                     piscarIntervalo = setInterval(function() {
-                        // Alterna entre a frase curta e um espaço vazio (dá o efeito de apagar/acender)
-                        document.title = mostrarAlerta ? tituloAlerta : " "; 
+                        // O '\u200E' é um caractere invisível! Ele engana o Chrome para não mostrar a URL
+                        document.title = mostrarAlerta ? tituloAlerta : "\u200E"; 
                         mostrarAlerta = !mostrarAlerta;
                     }, 1000);
                     
