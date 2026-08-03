@@ -1523,8 +1523,7 @@
             }
 
             try {
-                // A Sua API Node Oficial!
-                const urlServidor = `https://2vj8n07f-3000.brs.devtunnels.ms/api/rastreio?os=${os}&senha=${senha}`;
+                const urlServidor = `https://api.panaprado.com.br/api/rastreio?os=${os}&senha=${senha}`;
                 
                 const resposta = await fetch(urlServidor);
                 const dados = await resposta.json();
